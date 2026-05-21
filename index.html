@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binax Technologies | Elite Software</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background-color: #101822; 
+            color: white; 
+            margin: 0;     
+        }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .neon-text { text-shadow: 0 0 10px rgba(0, 242, 255, 0.5); }
+        
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+        .animate-float { animation: float 4s ease-in-out infinite; }
+
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+
+<body class="bg-[#0a0b10] overflow-x-hidden">
+
+    <div class="fixed inset-0 z-[-1] opacity-20" style="background-image: radial-gradient(#00f2ff 0.5px, transparent 0.5px); background-size: 30px 30px;"></div>
+
+    <nav class="flex justify-between items-center px-6 md:px-10 py-6 fixed w-full top-0 z-50 bg-[#0a0b10]/80 backdrop-blur-md border-b border-white/5">
+        <div class="font-bold text-lg md:text-xl tracking-tighter uppercase">BINAX <span class="font-light text-cyan-400">TECHNOLOGIES</span></div>
+        
+        <div class="hidden md:flex space-x-8 text-[12px] tracking-[0.2em] uppercase font-medium">
+            <a href="#" class="hover:text-cyan-400 transition">Inicio</a>
+            <a href="#servicios" class="hover:text-cyan-400 transition">Servicios</a>
+            <a href="#contacto" class="hover:text-cyan-400 transition">Contacto</a>
+        </div>
+
+        <button id="mobile-menu-btn" class="md:hidden text-cyan-400 focus:outline-none">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+        </button>
+    </nav>
+
+    <div id="mobile-menu" class="hidden fixed inset-0 z-40 bg-[#0a0b10] flex flex-col items-center justify-center space-y-8 text-xl tracking-[0.3em] uppercase transition-all duration-500">
+        <a href="#" class="mobile-link hover:text-cyan-400">Inicio</a>
+        <a href="#servicios" class="mobile-link hover:text-cyan-400">Servicios</a>
+        <a href="#contacto" class="mobile-link hover:text-cyan-400">Contacto</a>
+    </div>
+
+    <section class="relative min-h-screen flex flex-col md:flex-row items-center px-6 md:px-10 pt-32 md:pt-0 overflow-hidden">
+        <div class="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-12 w-full max-w-7xl mx-auto">
+            
+            <div class="flex flex-col justify-center space-y-8 text-center md:text-left order-2 md:order-1">
+                <h1 class="text-4xl md:text-6xl font-bold leading-[1.1] uppercase tracking-tighter">
+                    Construimos el <br> <span class="text-cyan-400 neon-text">Futuro Digital,</span> <br> 
+                    <span class="text-white">sistema a sistema</span>
+                </h1>
+                <p class="text-gray-400 text-xs md:text-sm max-w-md mx-auto md:mx-0 leading-relaxed uppercase tracking-wider">
+                    Desarrollo de Sistemas, Apps Móviles y Web de Alta Gama para Empresas de Vanguardia.
+                </p>
+                <div>
+                    <a href="#contacto" class="inline-block w-full md:w-auto">
+                        <button class="w-full md:w-auto bg-cyan-400 text-black font-bold py-5 px-12 rounded-full text-[18px] md:text-[20px] tracking-widest uppercase hover:bg-white transition-all duration-300 shadow-[0_0_20px_rgba(0,242,255,0.4)]">
+                            Iniciar Proyecto
+                        </button>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="relative flex justify-center items-center order-1 md:order-2 mb-10 md:mb-0">
+                <div class="absolute w-[200px] h-[200px] md:w-[250px] md:h-[250px] bg-cyan-500/10 blur-[80px] md:blur-[120px] rounded-full animate-pulse"></div>
+                <img src="globo_atomo.png" alt="Binax Visual" 
+                     class="relative z-10 w-64 md:w-full max-w-lg md:scale-125 drop-shadow-[0_0_35px_rgba(0,242,255,0.3)] animate-float">
+            </div>
+        </div>
+    </section>
+
+    <section id="servicios" class="relative py-20 px-6 md:px-10 overflow-hidden">
+        <h2 class="text-center mb-16 text-xl md:text-2xl font-bold tracking-[0.2em] uppercase">
+            NUESTRAS CAPACIDADES <br> DE INGENIERÍA
+        </h2>
+        
+        <div class="flex flex-col md:flex-row gap-8 justify-center items-center md:items-stretch">
+            <div class="glass flex flex-col items-center p-10 rounded-3xl border border-white/5 transition-all duration-500 w-full max-w-[320px] hover:scale-105 hover:border-cyan-400">
+                <div class="relative w-20 h-20 mb-6 flex justify-center items-center">
+                    <div class="absolute inset-0 bg-cyan-400/10 blur-[30px] rounded-full animate-pulse"></div>
+                    <img src="tu_icono.png" alt="Desarrollo Web" class="relative z-10 w-full h-full object-contain">
+                </div>
+                <h3 class="font-bold uppercase tracking-tighter text-lg mb-3">Desarrollo Web</h3>
+                <p class="text-gray-400 text-[11px] text-center leading-relaxed uppercase tracking-wider">Páginas web escalables, intuitivas y optimizadas para rendimiento global.</p>
+            </div>
+
+            <div class="glass flex flex-col items-center p-10 rounded-3xl border border-white/5 transition-all duration-500 w-full max-w-[320px] hover:scale-105 hover:border-cyan-400">
+                <div class="relative w-20 h-20 mb-6 flex justify-center items-center">
+                    <div class="absolute inset-0 bg-cyan-400/10 blur-[30px] rounded-full animate-pulse"></div>
+                    <img src="tu_icono2.png" alt="Apps Móviles" class="relative z-10 w-full h-full object-contain">
+                </div>
+                <h3 class="font-bold uppercase tracking-tighter text-lg mb-3">Apps Móviles</h3>
+                <p class="text-gray-400 text-[11px] text-center leading-relaxed uppercase tracking-wider">Desarrollamos aplicaciones nativas e híbridas de alto impacto para iOS y Android.</p>
+            </div>
+
+            <div class="glass flex flex-col items-center p-10 rounded-3xl border border-white/5 transition-all duration-500 w-full max-w-[320px] hover:scale-105 hover:border-cyan-400">
+                <div class="relative w-20 h-20 mb-6 flex justify-center items-center">
+                    <div class="absolute inset-0 bg-cyan-400/10 blur-[30px] rounded-full animate-pulse"></div>
+                    <img src="tu_icono3.png" alt="Sistemas" class="relative z-10 w-full h-full object-contain">
+                </div>
+                <h3 class="font-bold uppercase tracking-tighter text-lg mb-3">Sistemas</h3>
+                <p class="text-gray-400 text-[11px] text-center leading-relaxed uppercase tracking-wider">Optimizamos tus procesos operativos con software robusto y a medida.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="py-24 px-6 md:px-10 relative">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-center text-xs tracking-[0.6em] uppercase text-cyan-400 mb-4 font-bold">Consultoría Técnica</h2>
+            <h3 class="text-center text-3xl md:text-4xl font-bold uppercase tracking-tighter mb-16">Inicia tu Proyecto</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+                <div class="flex flex-col justify-center space-y-10 text-center md:text-left">
+                    <p class="text-gray-400 text-xs md:text-sm leading-relaxed uppercase tracking-widest">
+                        Estamos listos para elevar tu infraestructura digital. Déjanos un mensaje y nuestro equipo de ingeniería te contactará.
+                    </p>
+                    <div class="space-y-6">
+                        <div class="text-xs tracking-widest uppercase font-bold"><span class="text-cyan-400">EMAIL:</span> contacto@binax.tech</div>
+                        <div class="text-xs tracking-widest uppercase font-bold"><span class="text-cyan-400">UBICACIÓN:</span> MARACAY, VENEZUELA</div>
+                    </div>
+                </div>
+
+                <form id="form-binax" class="glass p-8 md:p-10 rounded-3xl border border-white/10 space-y-6">
+                    <div>
+                        <label class="block text-[10px] uppercase tracking-[0.3em] text-gray-500 mb-2 ml-1">Nombre Completo</label>
+                        <input type="text" id="nombre" required class="w-full bg-white/5 border border-white/10 p-4 rounded-xl text-white text-sm outline-none focus:border-cyan-400 transition-all">
+                    </div>
+                    <div>
+                        <label class="block text-[10px] uppercase tracking-[0.3em] text-gray-500 mb-2 ml-1">Correo Electrónico</label>
+                        <input type="email" id="email" required class="w-full bg-white/5 border border-white/10 p-4 rounded-xl text-white text-sm outline-none focus:border-cyan-400 transition-all">
+                    </div>
+                    <div>
+                        <label class="block text-[10px] uppercase tracking-[0.3em] text-gray-500 mb-2 ml-1">Mensaje</label>
+                        <textarea id="mensaje" rows="4" required class="w-full bg-white/5 border border-white/10 p-4 rounded-xl text-white text-sm outline-none focus:border-cyan-400 transition-all resize-none"></textarea>
+                    </div>
+                    <button type="submit" class="w-full py-5 bg-cyan-400 text-black font-bold uppercase text-[12px] tracking-[0.3em] rounded-xl hover:bg-white transition-all duration-500">
+                        Enviar Solicitud
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        const links = document.querySelectorAll('.mobile-link');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+            document.body.classList.toggle('overflow-hidden');
+        });
+
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+                document.body.classList.remove('overflow-hidden');
+            });
+        });
+    </script>
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+        import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyBma_cb7PvzzFnuwK68SrLJoOxqSyIlwHM",
+            authDomain: "binax-web.firebaseapp.com",
+            projectId: "binax-web",
+            storageBucket: "binax-web.firebasestorage.app",
+            messagingSenderId: "312400351851",
+            appId: "1:312400351851:web:2897b3b4bbdaaa286e172e"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+
+        document.getElementById('form-binax').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const nombre = document.getElementById('nombre').value;
+            const email = document.getElementById('email').value;
+            const mensaje = document.getElementById('mensaje').value;
+
+            try {
+                await addDoc(collection(db, "mensajes"), {
+                    cliente: nombre,
+                    correo: email,
+                    texto: mensaje,
+                    fecha: new Date()
+                });
+                alert('¡Protocolo de envío exitoso, Dayana! Mensaje recibido en Binax.');
+                document.getElementById('form-binax').reset();
+            } catch (error) {
+                console.error("Error al enviar: ", error);
+                alert('Error técnico. Revisa la consola.');
+            }
+        });
+    </script>
+</body>
+</html>
